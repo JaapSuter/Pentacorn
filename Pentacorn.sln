@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pentacorn", "Pentacorn.csproj", "{589428B0-EE06-46A1-9636-DD343C861B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pentacorn.Content", "Pentacorn.Content.contentproj", "{1C6415ED-F88E-439C-826D-000103521D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{589428B0-EE06-46A1-9636-DD343C861B81}.Debug|x86.ActiveCfg = Debug|x86
+		{589428B0-EE06-46A1-9636-DD343C861B81}.Debug|x86.Build.0 = Debug|x86
+		{589428B0-EE06-46A1-9636-DD343C861B81}.Release|x86.ActiveCfg = Release|x86
+		{589428B0-EE06-46A1-9636-DD343C861B81}.Release|x86.Build.0 = Release|x86
+		{1C6415ED-F88E-439C-826D-000103521D90}.Debug|x86.ActiveCfg = Debug|x86
+		{1C6415ED-F88E-439C-826D-000103521D90}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

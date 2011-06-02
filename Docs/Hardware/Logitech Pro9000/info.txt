@@ -1,0 +1,13 @@
+=== Start of device information =======================
+Device name:           Logitech QuickCam Pro 9000
+USB Vendor ID (VID):   0x046D
+USB Product ID (PID):  0x0990
+USB Revision (BCD):    0x0007
+Firmware Version:      2.96.6009
+Firmware CRC:          0xCCF8
+EEPROM Version:        2.119
+Sensor Type:           2.6
+Driver Version:        13.1.1021.0
+=== End of device information =========================
+
+USB\VID_046D&PID_0990&MI_00\7&32F118E&0&0000

@@ -1,0 +1,1109 @@
+          ---===>Device Information<===---
+
+ConnectionStatus:                  
+Current Config Value:              0x01  -> Device Bus Speed: High
+Device Address:                    0x02
+Open Pipes:                           1
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x87  -> Direction: IN - EndpointID: 7
+bmAttributes:                      0x03  -> Interrupt Transfer Type
+wMaxPacketSize:                  0x0010 = 1 transactions per microframe, 0x10 max bytes
+bInterval:                         0x08
+
+          ===>Device Descriptor<===
+bLength:                           0x12
+bDescriptorType:                   0x01
+bcdUSB:                          0x0200
+bDeviceClass:                      0xEF  -> This is a Multi-interface Function Code Device
+bDeviceSubClass:                   0x02  -> This is the Common Class Sub Class
+bDeviceProtocol:                   0x01  -> This is the Interface Association Descriptor protocol
+bMaxPacketSize0:                   0x40 = (64) Bytes
+idVendor:                        0x046D = Logitech Inc.
+idProduct:                       0x0990
+bcdDevice:                       0x0007
+iManufacturer:                     0x00
+iProduct:                          0x00
+iSerialNumber:                     0x02
+     English (United States)  "B814421B"
+bNumConfigurations:                0x01
+
+          ===>Configuration Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x02
+wTotalLength:                    0x0599  -> Validated
+bNumInterfaces:                    0x04
+bConfigurationValue:               0x01
+iConfiguration:                    0x00
+bmAttributes:                      0x80  -> Bus Powered
+MaxPower:                          0xFA = 500 mA
+
+          ===>IAD Descriptor<===
+bLength:                           0x08
+bDescriptorType:                   0x0B
+bFirstInterface:                   0x00
+bInterfaceCount:                   0x02
+bFunctionClass:                    0x0E  -> Video Interface Class
+bFunctionSubClass:                 0x03  -> Video Interface Collection
+bFunctionProtocol:                 0x00  -> PC_PROTOCOL_UNDEFINED protocol
+iFunction:                         0x00
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x00
+bAlternateSetting:                 0x00
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x01  -> Video Control Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Class-Specific Video Control Interface Header Descriptor<===
+bLength:                           0x0D
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x01
+bcdVDC:                          0x0100
+wTotalLength:                    0x0085  -> Validated
+dwClockFrequency:            0x02DC6C00 = (48000000) Hz
+bInCollection:                     0x01
+baInterfaceNr[1]:                  0x01
+
+          ===>Video Control Input Terminal Descriptor<===
+bLength:                           0x12
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x02
+bTerminalID:                       0x01
+wTerminalType:                   0x0201 = (ITT_CAMERA)
+bAssocTerminal:                    0x00
+iTerminal:                         0x00
+===>Camera Input Terminal Data
+wObjectiveFocalLengthMin:        0x0000
+wObjectiveFocalLengthMax:        0x0000
+wOcularFocalLength:              0x0000
+bControlSize:                      0x03
+bmControls : 0x0E 0x00 0x00 
+     D00 = 0   no -  Scanning Mode
+     D01 = 1  yes -  Auto-Exposure Mode
+     D02 = 1  yes -  Auto-Exposure Priority
+     D03 = 1  yes -  Exposure Time (Absolute)
+     D04 = 0   no -  Exposure Time (Relative)
+     D05 = 0   no -  Focus (Absolute)
+     D06 = 0   no -  Focus (Relative)
+     D07 = 0   no -  Iris (Absolute)
+     D08 = 0   no -  Iris (Relative)
+     D09 = 0   no -  Zoom (Absolute)
+     D10 = 0   no -  Zoom (Relative)
+     D11 = 0   no -  Pan (Absolute)
+     D12 = 0   no -  Pan (Relative)
+     D13 = 0   no -  Roll (Absolute)
+     D14 = 0   no -  Roll (Relative)
+     D15 = 0   no -  Tilt (Absolute)
+     D16 = 0   no -  Tilt (Relative)
+     D17 = 0   no -  Focus Auto
+     D18 = 0   no -  Reserved
+     D19 = 0   no -  Reserved
+     D20 = 0   no -  Reserved
+     D21 = 0   no -  Reserved
+     D22 = 0   no -  Reserved
+     D23 = 0   no -  Reserved
+
+          ===>Video Control Processing Unit Descriptor<===
+bLength:                           0x0B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bUnitID:                           0x02
+bSourceID:                         0x01
+wMaxMultiplier:                  0x4000
+bControlSize:                      0x02
+bmControls : 0x5B 0x17 
+     D00 = 1  yes -  Brightness
+     D01 = 1  yes -  Contrast
+     D02 = 0   no -  Hue
+     D03 = 1  yes -  Saturation
+     D04 = 1  yes -  Sharpness
+     D05 = 0   no -  Gamma
+     D06 = 1  yes -  White Balance Temperature
+     D07 = 0   no -  White Balance Component
+     D08 = 1  yes -  Backlight Compensation
+     D09 = 1  yes -  Gain
+     D10 = 1  yes -  Power Line Frequency
+     D11 = 0   no -  Hue, Auto
+     D12 = 1  yes -  White Balance Temperature, Auto
+     D13 = 0   no -  White Balance Component, Auto
+     D14 = 0   no -  Digital Multiplier
+     D15 = 0   no -  Digital Multiplier Limit
+iProcessing:                       0x00
+
+          ===>Video Control Extension Unit Descriptor<===
+bLength:                           0x1B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x06
+bUnitID:                           0x04
+guidExtensionCode:                 {63610682-5070-49AB-B8CC-B3855E8D221E}
+bNumControls:                      0x0A
+bNrInPins:                         0x01
+===>List of Connected Units and Terminal ID's
+baSourceID[1]:                     0x02
+bControlSize:                      0x02
+bmControls : 0xFF 0x03 
+     D00 = 1  yes -  Vendor-Specific (Optional)
+     D01 = 1  yes -  Vendor-Specific (Optional)
+     D02 = 1  yes -  Vendor-Specific (Optional)
+     D03 = 1  yes -  Vendor-Specific (Optional)
+     D04 = 1  yes -  Vendor-Specific (Optional)
+     D05 = 1  yes -  Vendor-Specific (Optional)
+     D06 = 1  yes -  Vendor-Specific (Optional)
+     D07 = 1  yes -  Vendor-Specific (Optional)
+     D08 = 1  yes -  Vendor-Specific (Optional)
+     D09 = 1  yes -  Vendor-Specific (Optional)
+     D10 = 0   no -  Vendor-Specific (Optional)
+     D11 = 0   no -  Vendor-Specific (Optional)
+     D12 = 0   no -  Vendor-Specific (Optional)
+     D13 = 0   no -  Vendor-Specific (Optional)
+     D14 = 0   no -  Vendor-Specific (Optional)
+     D15 = 0   no -  Vendor-Specific (Optional)
+iExtension:                        0x00
+
+          ===>Video Control Extension Unit Descriptor<===
+bLength:                           0x1B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x06
+bUnitID:                           0x0D
+guidExtensionCode:                 {63610682-5070-49AB-B8CC-B3855E8D221F}
+bNumControls:                      0x08
+bNrInPins:                         0x01
+===>List of Connected Units and Terminal ID's
+baSourceID[1]:                     0x02
+bControlSize:                      0x02
+bmControls : 0x7F 0x01 
+     D00 = 1  yes -  Vendor-Specific (Optional)
+     D01 = 1  yes -  Vendor-Specific (Optional)
+     D02 = 1  yes -  Vendor-Specific (Optional)
+     D03 = 1  yes -  Vendor-Specific (Optional)
+     D04 = 1  yes -  Vendor-Specific (Optional)
+     D05 = 1  yes -  Vendor-Specific (Optional)
+     D06 = 1  yes -  Vendor-Specific (Optional)
+     D07 = 0   no -  Vendor-Specific (Optional)
+     D08 = 1  yes -  Vendor-Specific (Optional)
+     D09 = 0   no -  Vendor-Specific (Optional)
+     D10 = 0   no -  Vendor-Specific (Optional)
+     D11 = 0   no -  Vendor-Specific (Optional)
+     D12 = 0   no -  Vendor-Specific (Optional)
+     D13 = 0   no -  Vendor-Specific (Optional)
+     D14 = 0   no -  Vendor-Specific (Optional)
+     D15 = 0   no -  Vendor-Specific (Optional)
+iExtension:                        0x00
+
+          ===>Video Control Extension Unit Descriptor<===
+bLength:                           0x1C
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x06
+bUnitID:                           0x0A
+guidExtensionCode:                 {63610682-5070-49AB-B8CC-B3855E8D2252}
+bNumControls:                      0x18
+bNrInPins:                         0x01
+===>List of Connected Units and Terminal ID's
+baSourceID[1]:                     0x04
+bControlSize:                      0x03
+bmControls : 0xFF 0xFF 0xFF 
+     D00 = 1  yes -  Vendor-Specific (Optional)
+     D01 = 1  yes -  Vendor-Specific (Optional)
+     D02 = 1  yes -  Vendor-Specific (Optional)
+     D03 = 1  yes -  Vendor-Specific (Optional)
+     D04 = 1  yes -  Vendor-Specific (Optional)
+     D05 = 1  yes -  Vendor-Specific (Optional)
+     D06 = 1  yes -  Vendor-Specific (Optional)
+     D07 = 1  yes -  Vendor-Specific (Optional)
+     D08 = 1  yes -  Vendor-Specific (Optional)
+     D09 = 1  yes -  Vendor-Specific (Optional)
+     D10 = 1  yes -  Vendor-Specific (Optional)
+     D11 = 1  yes -  Vendor-Specific (Optional)
+     D12 = 1  yes -  Vendor-Specific (Optional)
+     D13 = 1  yes -  Vendor-Specific (Optional)
+     D14 = 1  yes -  Vendor-Specific (Optional)
+     D15 = 1  yes -  Vendor-Specific (Optional)
+iExtension:                        0x00
+
+          ===>Video Control Output Terminal Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x03
+bTerminalID:                       0x05
+wTerminalType:                   0x0101 = (TT_STREAMING)
+bAssocTerminal:                    0x00
+bSourceID:                         0x04
+iTerminal:                         0x00
+*!*ERROR:  unknown bDescriptorType
+
+          ===>Descriptor Hex Dump<===
+bLength:                           0x20
+bDescriptorType:                   0x41
+20 41 01 0C 82 06 61 63 70 50 AB 49 B8 CC B3 85 
+5E 8D 22 50 14 01 04 03 FF FF 0F 00 00 00 00 00 
+*!*ERROR:  unknown bDescriptorType
+
+          ===>Descriptor Hex Dump<===
+bLength:                           0x20
+bDescriptorType:                   0x41
+20 41 01 08 82 06 61 63 70 50 AB 49 B8 CC B3 85 
+5E 8D 22 51 03 01 04 03 19 00 00 00 00 00 01 00 
+*!*ERROR:  unknown bDescriptorType
+
+          ===>Descriptor Hex Dump<===
+bLength:                           0x20
+bDescriptorType:                   0x41
+20 41 01 0B 82 06 61 63 70 50 AB 49 B8 CC B3 85 
+5E 8D 22 55 01 01 04 03 01 00 00 00 00 00 00 00 
+*!*ERROR:  unknown bDescriptorType
+
+          ===>Descriptor Hex Dump<===
+bLength:                           0x20
+bDescriptorType:                   0x41
+20 41 01 09 82 06 61 63 70 50 AB 49 B8 CC B3 85 
+5E 8D 22 56 02 01 04 03 0C 00 00 00 00 00 00 00 
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x87  -> Direction: IN - EndpointID: 7
+bmAttributes:                      0x03  -> Interrupt Transfer Type
+wMaxPacketSize:                  0x0010 = 1 transactions per microframe, 0x10 max bytes
+bInterval:                         0x08
+
+          ===>Class-specific VC Interrupt Endpoint Descriptor<===
+bLength:                           0x05 
+bDescriptorType:                   0x25
+bDescriptorSubType:                0x03
+wMaxTransferSize:                0x0010 = (16) Bytes
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x00
+bNumEndpoints:                     0x00
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Video Class-Specific VS Video Input Header Descriptor<===
+bLength:                           0x10
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x01
+bNumFormats:                       0x03
+wTotalLength:                    0x034A  -> Validated
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmInfo:                            0x00  -> Dynamic Format Change not Supported
+bTerminalLink:                     0x05
+bStillCaptureMethod:               0x02  -> Still Capture Method 2
+bTriggerSupport:                   0x01  -> Hardware Triggering Support
+bTriggerUsage:                     0x00  -> Host will initiate still image capture
+bControlSize:                      0x01
+Video Payload Format 1             0x04 
+     D00 = 0   no -  Key Frame Rate
+     D01 = 0   no -  P Frame Rate
+     D02 = 1  yes -  Compression Quality
+     D03 = 0   no -  Compression Window Size
+     D04 = 0   no -  Generate Key Frame
+     D05 = 0   no -  Update Frame Segment
+     D06 = 0   no -  Reserved
+     D07 = 0   no -  Reserved
+Video Payload Format 2             0x00 
+     D00 = 0   no -  Key Frame Rate
+     D01 = 0   no -  P Frame Rate
+     D02 = 0   no -  Compression Quality
+     D03 = 0   no -  Compression Window Size
+     D04 = 0   no -  Generate Key Frame
+     D05 = 0   no -  Update Frame Segment
+     D06 = 0   no -  Reserved
+     D07 = 0   no -  Reserved
+Video Payload Format 3             0x04 
+     D00 = 0   no -  Key Frame Rate
+     D01 = 0   no -  P Frame Rate
+     D02 = 1  yes -  Compression Quality
+     D03 = 0   no -  Compression Window Size
+     D04 = 0   no -  Generate Key Frame
+     D05 = 0   no -  Update Frame Segment
+     D06 = 0   no -  Reserved
+     D07 = 0   no -  Reserved
+
+          ===>Video Streaming MJPEG Format Type Descriptor<===
+bLength:                           0x0B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x06
+bFormatIndex:                      0x01
+bNumFrameDescriptors:              0x07
+bmFlags:                           0x01  -> Sample Size is Fixed
+bDefaultFrameIndex:                0x03
+bAspectRatioX:                     0x00
+bAspectRatioY:                     0x00
+bmInterlaceFlags:                  0x00
+     D00   = 0  non-Interlaced stream or variable
+     D01   = 0  2 fields per frame
+     D02   = 0  Field 1 not first
+     D03   = 0  Reserved
+     D4..5 = 0  Field patterns  -> Field 1 only
+     D6..7 = 0  Display Mode  -> Bob only
+bCopyProtect:                      0x00  -> Duplication Unrestricted
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x01
+bmCapabilities:                    0x00
+wWidth:                          0x00A0
+wHeight:                         0x0078
+dwMinBitRate:                0x00177000
+dwMaxBitRate:                0x008CA000
+dwMaxVideoFrameBufferSize:   0x00009600
+dwDefaultFrameInterval:      0x00051615
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x02072432
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x02
+bmCapabilities:                    0x00
+wWidth:                          0x00B0
+wHeight:                         0x0090
+dwMinBitRate:                0x001EF000
+dwMaxBitRate:                0x00B9A000
+dwMaxVideoFrameBufferSize:   0x0000C600
+dwDefaultFrameInterval:      0x00051615
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x03072432
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x03
+bmCapabilities:                    0x00
+wWidth:                          0x0140
+wHeight:                         0x00F0
+dwMinBitRate:                0x005DC000
+dwMaxBitRate:                0x02328000
+dwMaxVideoFrameBufferSize:   0x00025800
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x04072432
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x04
+bmCapabilities:                    0x00
+wWidth:                          0x0160
+wHeight:                         0x0120
+dwMinBitRate:                0x007BC000
+dwMaxBitRate:                0x02E68000
+dwMaxVideoFrameBufferSize:   0x00031800
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x05072432
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x05
+bmCapabilities:                    0x00
+wWidth:                          0x0280
+wHeight:                         0x01E0
+dwMinBitRate:                0x01770000
+dwMaxBitRate:                0x08CA0000
+dwMaxVideoFrameBufferSize:   0x00096000
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x06072432
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x06
+bmCapabilities:                    0x00
+wWidth:                          0x0320
+wHeight:                         0x0258
+dwMinBitRate:                0x0249F000
+dwMaxBitRate:                0x0DBBA000
+dwMaxVideoFrameBufferSize:   0x000EA600
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x00051615
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+dwFrameInterval[6]:          0x07072426
+
+          ===>Video Streaming MJPEG Frame Type Descriptor<===
+bLength:                           0x26
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x07
+bFrameIndex:                       0x07
+bmCapabilities:                    0x00
+wWidth:                          0x03C0
+wHeight:                         0x02D0
+dwMinBitRate:                0x034BC000
+dwMaxBitRate:                0x09E34000
+dwMaxVideoFrameBufferSize:   0x00151800
+dwDefaultFrameInterval:      0x000F4240
+bFrameIntervalType:                0x03
+===>Additional Discrete Frame TypeData
+dwFrameInterval[0]:          0x000A2C2A
+dwFrameInterval[1]:          0x000F4240
+dwFrameInterval[2]:          0x001E8480
+dwFrameInterval[3]:          0x00032427
+*!*ERROR:  dwFrameInterval[0x03] must be greater than preceding dwFrameInterval[0x02]
+
+          ===>Still Image Frame Type Descriptor<===
+bLength:                           0x27
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x03
+bEndpointAddress:                  0x00
+bNumImageSizePatterns:             0x07
+wWidth[1]:                       0x00A0
+wHeight[1]:                      0x0078
+wWidth[2]:                       0x00B0
+wHeight[2]:                      0x0090
+wWidth[3]:                       0x0140
+wHeight[3]:                      0x00F0
+wWidth[4]:                       0x0160
+wHeight[4]:                      0x0120
+wWidth[5]:                       0x0280
+wHeight[5]:                      0x01E0
+wWidth[6]:                       0x0320
+wHeight[6]:                      0x0258
+wWidth[7]:                       0x03C0
+wHeight[7]:                      0x02D0
+bNumCompressionPattern:            0x05
+bCompression[1]:                   0x05
+bCompression[2]:                   0x0A
+bCompression[3]:                   0x0F
+bCompression[4]:                   0x14
+bCompression[5]:                   0x19
+
+
+          ===>Color Matching Descriptor<===
+bLength:                           0x06
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x0D
+bColorPrimaries:                   0x01
+bTransferCharacteristics:          0x01
+bMatrixCoefficients:               0x04
+
+          ===>Video Streaming Uncompressed Format Type Descriptor<===
+bLength:                           0x1B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x04
+bFormatIndex:                      0x02
+bNumFrameDescriptors:              0x08
+guidFormat:                        {32595559-0000-0010-8000-00AA00389B71} = YUY2 Format
+bBitsPerPixel:                     0x10
+bDefaultFrameIndex:                0x03
+bAspectRatioX:                     0x00
+bAspectRatioY:                     0x00
+bmInterlaceFlags:                  0x00
+     D0    = 0x00 Interlaced stream or variable: No
+     D1    = 0x00 Fields per frame: 2 fields
+     D2    = 0x00 Field 1 first: No
+     D3    = 0x00 Reserved
+     D4..5 = 0x00 Field patterns  -> Field 1 only
+     D6..7 = 0x00 Display Mode  -> Bob only
+bCopyProtect:                      0x00  -> Duplication Unrestricted
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x01
+bmCapabilities:                    0x00
+wWidth:                          0x00A0
+wHeight:                         0x0078
+dwMinBitRate:                0x00177000
+dwMaxBitRate:                0x008CA000
+dwMaxVideoFrameBufferSize:   0x00009600
+dwDefaultFrameInterval:      0x00051615
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00051615
+dwFrameInterval[2]:          0x00061A80
+dwFrameInterval[3]:          0x0007A120
+dwFrameInterval[4]:          0x000A2C2A
+dwFrameInterval[5]:          0x000F4240
+dwFrameInterval[6]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x02
+bmCapabilities:                    0x00
+wWidth:                          0x00B0
+wHeight:                         0x0090
+dwMinBitRate:                0x001EF000
+dwMaxBitRate:                0x00B9A000
+dwMaxVideoFrameBufferSize:   0x0000C600
+dwDefaultFrameInterval:      0x00051615
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00051615
+dwFrameInterval[2]:          0x00061A80
+dwFrameInterval[3]:          0x0007A120
+dwFrameInterval[4]:          0x000A2C2A
+dwFrameInterval[5]:          0x000F4240
+dwFrameInterval[6]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x03
+bmCapabilities:                    0x00
+wWidth:                          0x0140
+wHeight:                         0x00F0
+dwMinBitRate:                0x005DC000
+dwMaxBitRate:                0x02328000
+dwMaxVideoFrameBufferSize:   0x00025800
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00051615
+dwFrameInterval[2]:          0x00061A80
+dwFrameInterval[3]:          0x0007A120
+dwFrameInterval[4]:          0x000A2C2A
+dwFrameInterval[5]:          0x000F4240
+dwFrameInterval[6]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x04
+bmCapabilities:                    0x00
+wWidth:                          0x0160
+wHeight:                         0x0120
+dwMinBitRate:                0x007BC000
+dwMaxBitRate:                0x02E68000
+dwMaxVideoFrameBufferSize:   0x00031800
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00051615
+dwFrameInterval[2]:          0x00061A80
+dwFrameInterval[3]:          0x0007A120
+dwFrameInterval[4]:          0x000A2C2A
+dwFrameInterval[5]:          0x000F4240
+dwFrameInterval[6]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x32
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x05
+bmCapabilities:                    0x00
+wWidth:                          0x0280
+wHeight:                         0x01E0
+dwMinBitRate:                0x01770000
+dwMaxBitRate:                0x08CA0000
+dwMaxVideoFrameBufferSize:   0x00096000
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x06
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00051615
+dwFrameInterval[2]:          0x00061A80
+dwFrameInterval[3]:          0x0007A120
+dwFrameInterval[4]:          0x000A2C2A
+dwFrameInterval[5]:          0x000F4240
+dwFrameInterval[6]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x2E
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x06
+bmCapabilities:                    0x00
+wWidth:                          0x0320
+wHeight:                         0x0258
+dwMinBitRate:                0x0249F000
+dwMaxBitRate:                0x0B71B000
+dwMaxVideoFrameBufferSize:   0x000EA600
+dwDefaultFrameInterval:      0x000A2C2A
+bFrameIntervalType:                0x05
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x00061A80
+dwFrameInterval[2]:          0x0007A120
+dwFrameInterval[3]:          0x000A2C2A
+dwFrameInterval[4]:          0x000F4240
+dwFrameInterval[5]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x22
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x07
+bmCapabilities:                    0x00
+wWidth:                          0x03C0
+wHeight:                         0x02D0
+dwMinBitRate:                0x034BC000
+dwMaxBitRate:                0x06978000
+dwMaxVideoFrameBufferSize:   0x00151800
+dwDefaultFrameInterval:      0x000F4240
+bFrameIntervalType:                0x02
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x000F4240
+dwFrameInterval[2]:          0x001E8480
+
+          ===>Video Streaming Uncompressed Frame Type Descriptor<===
+bLength:                           0x1E
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x05
+bFrameIndex:                       0x08
+bmCapabilities:                    0x00
+wWidth:                          0x0640
+wHeight:                         0x04B0
+dwMinBitRate:                0x0927C000
+dwMaxBitRate:                0x0927C000
+dwMaxVideoFrameBufferSize:   0x003A9800
+dwDefaultFrameInterval:      0x001E8480
+bFrameIntervalType:                0x01
+===>Additional Discrete Frame Type Data
+dwFrameInterval[1]:          0x001E8480
+
+          ===>Still Image Frame Type Descriptor<===
+bLength:                           0x27
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x03
+bEndpointAddress:                  0x00
+bNumImageSizePatterns:             0x08
+wWidth[1]:                       0x00A0
+wHeight[1]:                      0x0078
+wWidth[2]:                       0x00B0
+wHeight[2]:                      0x0090
+wWidth[3]:                       0x0140
+wHeight[3]:                      0x00F0
+wWidth[4]:                       0x0160
+wHeight[4]:                      0x0120
+wWidth[5]:                       0x0280
+wHeight[5]:                      0x01E0
+wWidth[6]:                       0x0320
+wHeight[6]:                      0x0258
+wWidth[7]:                       0x03C0
+wHeight[7]:                      0x02D0
+wWidth[8]:                       0x0640
+wHeight[8]:                      0x04B0
+bNumCompressionPattern:            0x01
+bCompression[1]:                   0x05
+
+
+          ===>Color Matching Descriptor<===
+bLength:                           0x06
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x0D
+bColorPrimaries:                   0x01
+bTransferCharacteristics:          0x01
+bMatrixCoefficients:               0x04
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x01
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x00C0 = 1 transactions per microframe, 0xC0 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x02
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0180 = 1 transactions per microframe, 0x180 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x03
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0200 = 1 transactions per microframe, 0x200 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x04
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0280 = 1 transactions per microframe, 0x280 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x05
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0320 = 1 transactions per microframe, 0x320 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x06
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x03B0 = 1 transactions per microframe, 0x3B0 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x07
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0A80 = 2 transactions per microframe, 0x280 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x08
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0B20 = 2 transactions per microframe, 0x320 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x09
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0BE0 = 2 transactions per microframe, 0x3E0 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x0A
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x1380 = 3 transactions per microframe, 0x380 max bytes
+bInterval:                         0x01
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x01
+bAlternateSetting:                 0x0B
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x0E  -> Video Interface Class
+bInterfaceSubClass:                0x02  -> Video Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+iInterface:                        0x00
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x81  -> Direction: IN - EndpointID: 1
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x13FC = 3 transactions per microframe, 0x3FC max bytes
+bInterval:                         0x01
+
+          ===>IAD Descriptor<===
+bLength:                           0x08
+bDescriptorType:                   0x0B
+bFirstInterface:                   0x02
+bInterfaceCount:                   0x02
+bFunctionClass:                    0x01  -> Audio Interface Class
+bFunctionSubClass:                 0x02  -> Audio Streaming Interface SubClass
+bFunctionProtocol:                 0x00
+iFunction:                         0x00
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x02
+bAlternateSetting:                 0x00
+bNumEndpoints:                     0x00
+bInterfaceClass:                   0x01  -> Audio Interface Class
+bInterfaceSubClass:                0x01  -> Audio Control Interface SubClass
+bInterfaceProtocol:                0x00
+CAUTION:  This may be an invalid bInterfaceProtocol
+iInterface:                        0x00
+
+          ===>Audio Control Interface Header Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x01
+bcdADC:                          0x0100
+wTotalLength:                    0x0026
+bInCollection:                     0x01
+baInterfaceNr[1]:                  0x03
+
+          ===>Audio Control Input Terminal Descriptor<===
+bLength:                           0x0C
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x02
+bTerminalID:                       0x01
+wTerminalType:                   0x0201 (Microphone)
+bAssocTerminal:                    0x00
+bNrChannels:                       0x01
+wChannelConfig:                  0x0000
+iChannelNames:                     0x00
+iTerminal:                         0x00
+
+          ===>Audio Control Output Terminal Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x03
+bTerminalID:                       0x03
+wTerminalType:                   0x0101 (USB streaming)
+bAssocTerminal:                    0x01
+bSourceID:                         0x05
+iTerminal:                         0x00
+
+          ===>Audio Control Feature Unit Descriptor<===
+bLength:                           0x08
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x06
+bUnitID:                           0x05
+bSourceID:                         0x01
+bControlSize:                      0x01
+bmaControls[0]:
+03 
+iFeature:                          0x00
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x03
+bAlternateSetting:                 0x00
+bNumEndpoints:                     0x00
+bInterfaceClass:                   0x01  -> Audio Interface Class
+bInterfaceSubClass:                0x02  -> Audio Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+CAUTION:  This may be an invalid bInterfaceProtocol
+iInterface:                        0x00
+
+          ===>Interface Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x04
+bInterfaceNumber:                  0x03
+bAlternateSetting:                 0x01
+bNumEndpoints:                     0x01
+bInterfaceClass:                   0x01  -> Audio Interface Class
+bInterfaceSubClass:                0x02  -> Audio Streaming Interface SubClass
+bInterfaceProtocol:                0x00
+CAUTION:  This may be an invalid bInterfaceProtocol
+iInterface:                        0x00
+
+          ===>Audio Streaming Class Specific Interface Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x01
+bTerminalLink:                     0x03
+bDelay:                            0x01
+wFormatTag:                      0x0001 (PCM)
+
+          ===>Audio Streaming Format Type Descriptor<===
+bLength:                           0x0B
+bDescriptorType:                   0x24
+bDescriptorSubtype:                0x02
+bFormatType:                       0x01
+bNrChannels:                       0x01
+bSubframeSize:                     0x02
+bBitResolution:                    0x10
+bSamFreqType:                      0x01
+tSamFreq[1]:                   0x003E80 (16000 Hz)
+
+          ===>Endpoint Descriptor<===
+bLength:                           0x09
+bDescriptorType:                   0x05
+bEndpointAddress:                  0x86  -> Direction: IN - EndpointID: 6
+bmAttributes:                      0x05  -> Isochronous Transfer Type
+                   Synchronization Type = Asynchronous
+Bulk Transfer Type
+wMaxPacketSize:                  0x0024 = 1 transactions per microframe, 0x24 max bytes
+wInterval:                       0x0004
+bSyncAddress:                      0x00
+
+          ===>Audio Streaming Class Specific Audio Data Endpoint Descriptor<===
+bLength:                           0x07
+bDescriptorType:                   0x25
+bDescriptorSubtype:                0x01
+bmAttributes:                      0x01
+bLockDelayUnits:                   0x00
+wLockDelay:                      0x0000
+ 

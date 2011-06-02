@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{589428B0-EE06-46A1-9636-DD343C861B81}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pentacorn</RootNamespace>
+    <AssemblyName>Pentacorn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>45989ff7-7d89-4e2d-94f7-c2bcabc4282a</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Pentacorn.ico</ApplicationIcon>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <IntermediateOutputPath>obj\$(Platform)\$(Configuration)</IntermediateOutputPath>
+    <Thumbnail>Pentacorn\Other\Pentacorn.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>false</NoStdLib>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>false</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncCtpLibrary, Version=1.0.4107.18181, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\x86\Misc\AsyncCtpLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV, Version=2.2.0.1010, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.2.0.1010, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.0.1010, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.0.1010, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.CoreEx, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Interactive, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Reactive, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Reactive.ClientProfile, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Reactive.ExtendedProfile, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Reactive.Testing, Version=1.0.2856.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=0.0.3951.36519, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>C:\Users\Jaap\Documents\Microsoft Visual Studio Async CTP\Samples\System.Threading.Tasks.Dataflow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ZedGraph.resources, Version=5.1.5.28844, Culture=zh-cn, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="External\AsyncCall.cs" />
+    <Compile Include="External\CancellationTokenExtensions.cs" />
+    <Compile Include="External\CompletedTask.cs" />
+    <Compile Include="External\ConcurrentExclusiveInterleave.cs" />
+    <Compile Include="External\CurrentThreadTaskScheduler.cs" />
+    <Compile Include="External\LimitedConcurrencyLevelTaskScheduler.cs" />
+    <Compile Include="External\LinqToTasks.cs" />
+    <Compile Include="External\ObjectPool.cs" />
+    <Compile Include="External\OrderedTaskScheduler.cs" />
+    <Compile Include="External\ProducerConsumerCollectionBase.cs" />
+    <Compile Include="External\QueuedTaskScheduler.cs" />
+    <Compile Include="External\ReductionVariable.cs" />
+    <Compile Include="External\ReprioritizableTaskScheduler.cs" />
+    <Compile Include="External\RoundRobinTaskScheduler.cs" />
+    <Compile Include="External\SerialTaskQueue.cs" />
+    <Compile Include="External\StaTaskScheduler.cs" />
+    <Compile Include="External\SynchronizationContextTaskScheduler.cs" />
+    <Compile Include="External\TaskCompletionSourceExtensions.cs" />
+    <Compile Include="External\TaskExtrasExtensions.cs" />
+    <Compile Include="External\TaskSchedulerExtensions.cs" />
+    <Compile Include="External\ThreadSafeRandom.cs" />
+    <Compile Include="Pentacorn\BpmDetection.cs" />
+    <Compile Include="Pentacorn\Cameras\CaptureCamera.cs" />
+    <Compile Include="Pentacorn\Cameras\Camera.cs" />
+    <Compile Include="Pentacorn\Cameras\VirtualProjector.cs" />
+    <Compile Include="Pentacorn\Cameras\Projector.cs" />
+    <Compile Include="Pentacorn\Cameras\NullProjector.cs" />
+    <Compile Include="Pentacorn\Cameras\ScreenCamera.cs" />
+    <Compile Include="Pentacorn\RunningMinMaxAverage.cs" />
+    <Compile Include="Pentacorn\Graphics\ViewProject.cs" />
+    <Compile Include="Pentacorn\Graphics\RenderableMeshModel.cs" />
+    <Compile Include="Pentacorn\Graphics\RenderableCloud.cs" />
+    <Compile Include="Pentacorn\Primitives\Cloud.cs" />
+    <Compile Include="Pentacorn\Primitives\MeshModel.cs" />
+    <Compile Include="Pentacorn\Primitives\GrayCodeSweep.cs" />
+    <Compile Include="Pentacorn\Graphics\RenderableSphere.cs" />
+    <Compile Include="Pentacorn\Graphics\RenderableGrayCodeSweep.cs" />
+    <Compile Include="Pentacorn\Primitives\Sphere.cs" />
+    <Compile Include="Pentacorn\SafeGrayCode.cs" />
+    <Compile Include="Pentacorn\Tasks\CalibrateTask.cs" />
+    <Compile Include="Pentacorn\Tasks\ChessboardSearchTask.cs" />
+    <Compile Include="Pentacorn\Tasks\ChessboardShapeTask.cs" />
+    <Compile Include="Pentacorn\Tasks\CalibrateIndirectlyTask.cs" />
+    <Compile Include="Pentacorn\Tasks\PhaseShiftTask.cs" />
+    <Compile Include="Pentacorn\Tasks\LightPaintingTask.cs" />
+    <Compile Include="Pentacorn\Tasks\GrayScanTask.cs" />
+    <Compile Include="Pentacorn\Tasks\WorkFlowTask.cs" />
+    <Compile Include="Pentacorn\Tasks\LocateTask.cs" />
+    <Compile Include="Pentacorn\Trigger.cs" />
+    <Compile Include="Pentacorn\Toggle.cs" />
+    <Compile Include="Pentacorn\Graphics\IViewProject.cs" />
+    <Compile Include="Pentacorn\Cameras\OrbitCamera.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IMediaSample.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IKsTopologyInfo.cs" />
+    <Compile Include="Pentacorn\Captures\LogitechPro9000.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\FilterInfo.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\FilterInfoCollection.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IKsPropertySet.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IAMCameraControl.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IAMVideoProcAmp.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IAMStreamConfig.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IBaseFilter.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\ICaptureGraphBuilder2.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\ICreateDevEnum.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IEnumFilters.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IEnumPins.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IFileSourceFilter.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IFilterGraph.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IFilterGraph2.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IGraphBuilder.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IMediaControl.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IMediaEventEx.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IMediaFilter.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IPersist.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IPin.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IPropertyBag.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IReferenceClock.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\ISampleGrabber.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\ISampleGrabberCB.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\ISpecifyPropertyPages.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\IVideoWindow.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\Structures.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\Tools.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\Uuids.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Internals\Win32.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\Uuids.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\VideoCapabilities.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShowCapture.cs" />
+    <Compile Include="Pentacorn\Captures\DirectShow\VideoEvents.cs" />
+    <Compile Include="Pentacorn\ConversionEx.cs" />
+    <Compile Include="Pentacorn\Concurrent.cs" />
+    <Compile Include="Pentacorn\Captures\VirtualCapture.cs" />
+    <Compile Include="Pentacorn\Graphics\IVisible.cs" />
+    <Compile Include="Pentacorn\Primitives\Clear.cs" />
+    <Compile Include="Pentacorn\Primitives\ColoredChessboard.cs" />
+    <Compile Include="Pentacorn\Tests\CoordinateSystemAssumptions.cs" />
+    <Compile Include="Pentacorn\Tests\TestDisposable.cs" />
+    <Compile Include="Pentacorn\Tests\ObservableSandbox.cs" />
+    <Compile Include="Pentacorn\IObservableEx.cs" />
+    <Compile Include="Pentacorn\Primitives\Text.cs" />
+    <Compile Include="Pentacorn\Primitives\Scene.cs" />
+    <Compile Include="Pentacorn\Graphics\Frame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\IRenderable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableChessboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableCircle2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableClear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableFrustum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableLineSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderablePicture2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderablePrimitiveBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableQuad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RenderableT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\Renderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\RendererImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\VertexPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\VertexPositionNormal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Graphics\Window.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pentacorn\Cameras\RealProjector.cs" />
+    <Compile Include="Pentacorn\Input.cs" />
+    <Compile Include="Pentacorn\Primitives\Frustum.cs" />
+    <Compile Include="Pentacorn\SchedulerEx.cs" />
+    <Compile Include="Pentacorn\Primitives\Grid.cs" />
+    <Compile Include="Pentacorn\Primitives\LineSegment.cs" />
+    <Compile Include="Pentacorn\DictionaryFile.cs" />
+    <Compile Include="Pentacorn\Cameras\Intrinsics.cs" />
+    <Compile Include="Pentacorn\Primitives\Chessboard.cs" />
+    <Compile Include="Pentacorn\Anchor.cs" />
+    <Compile Include="Pentacorn\Tasks\ProgramTask.cs" />
+    <Compile Include="Pentacorn\Tasks\EntryTask.cs" />
+    <Compile Include="Pentacorn\SizeEx.cs" />
+    <Compile Include="Pentacorn\Palette.cs" />
+    <Compile Include="Pentacorn\Primitives\Picture2D.cs" />
+    <Compile Include="Pentacorn\PictureEx.cs" />
+    <Compile Include="Pentacorn\Primitives\Quad.cs" />
+    <Compile Include="Pentacorn\Util.cs" />
+    <Compile Include="Pentacorn\Primitives\Circle2D.cs" />
+    <Compile Include="Pentacorn\Program.cs" />
+    <Compile Include="Pentacorn\InteropBuffer.cs" />
+    <Compile Include="Pentacorn\Global.cs" />
+    <Compile Include="Pentacorn\Winterop.cs" />
+    <Compile Include="Pentacorn\MiscellaneousEx.cs" />
+    <Compile Include="Pentacorn\Picture.cs" />
+    <Compile Include="Pentacorn\EntryPoint.cs" />
+    <Compile Include="Pentacorn\Captures\Capture.cs" />
+    <Compile Include="Pentacorn\Captures\CLEyeCapture.cs" />
+    <Compile Include="Pentacorn\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\x86\Misc\bpmDetect.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\cvextern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\Emgu.CV.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\Emgu.CV.ML.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\Emgu.CV.UI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\Emgu.Util.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_calib3d220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_contrib220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_core220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_features2d220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_ffmpeg220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_flann220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_gpu220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_highgui220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_imgproc220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_legacy220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_ml220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_objdetect220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\opencv_video220.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\ZedGraph.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\zh-CN\Emgu.CV.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Emgu\zh-CN\ZedGraph.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Misc\AsyncCtpLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Misc\CLEyeMulticam.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Misc\System.Threading.Tasks.Dataflow.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Misc\System.Windows.Controls.Toolkit.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\x86\Misc\System.Windows.Controls.Toolkit.Internals.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pentacorn.ico" />
+    <Content Include="Pentacorn\Other\Pentacorn.ico" />
+    <None Include="App.config" />
+    <None Include="Pentacorn\Other\Pentacorn.png" />
+    <None Include="Performance\Pentacorn.psess" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Pentacorn.Content.contentproj">
+      <Project>{1C6415ED-F88E-439C-826D-000103521D90}</Project>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
